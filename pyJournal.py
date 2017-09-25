@@ -1,7 +1,8 @@
 """ 
 Personal Journal App
-
 """
+#import pyJournal_datawork
+from pyJournal_datawork import load, save  # can do import
 
 def main():
     print_header()
@@ -17,7 +18,7 @@ def print_header():
 def run_event_loop():
     print('What do you want to do with your journal?')
     cmd = None
-    journal_data = []  # list()
+    journal_data = load()     # pyJournal_datawork.load()  #[]  # list()
     
     while cmd != 'x':
         cmd = input('[L]ist entries, [A]dd an entry, E[x]it: ')
