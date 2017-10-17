@@ -5,7 +5,7 @@ Created on Thu Oct 12 13:33:35 2017
   
 @author: glrulon
 """
-from WizActors import Wizard, Creature
+from WizActors import Wizard, Creature, Dragon, SmallAnimal
 import random
 import time
 
@@ -27,10 +27,10 @@ def game_loop():
     
     
     creatures = [
-                 Creature('Toad',1),
+                 SmallAnimal('Toad',1),
                  Creature('Tiger',12),
-                 Creature('Bat', 3),
-                 Dragon('Dragon', 50, 100),
+                 SmallAnimal('Bat', 3),
+                 Dragon('Dragon', 50, 75, True),
                  Creature('Evil Wizard', 1000),
                  ]
     
